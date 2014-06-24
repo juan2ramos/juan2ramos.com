@@ -1,10 +1,8 @@
 <?php
 
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', function(){return View::make('front.home');});
+
 Route::get('mail',function(){
     $data = ['pass' => 'jajaj'];
     Mail::send('emails.password', $data, function ($message) {
