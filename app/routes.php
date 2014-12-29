@@ -1,13 +1,17 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Application Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register all of the routes for an application.
+| It's a breeze. Simply tell Laravel the URIs it should respond to
+| and give it the Closure to execute when that URI is requested.
+|
+*/
 
-Route::get('/', function(){return View::make('front.home');});
-
-Route::get('mail',function(){
-    $data = ['pass' => 'jajaj'];
-    Mail::send('emails.password', $data, function ($message) {
-        $message->subject('Restart password');
-        $message->to('juan2ramos@gmail.com');
-    });
-    return Response::json(['success' => 1]);
+Route::get('/', function()
+{
+	return View::make('hello');
 });
