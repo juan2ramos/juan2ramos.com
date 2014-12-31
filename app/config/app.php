@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -25,7 +25,6 @@ return array(
 	| your application so that it is used when running Artisan tasks.
 	|
 	*/
-
 	'url' => 'http://localhost',
 
 	/*
@@ -124,7 +123,8 @@ return array(
 
 		//Custom
 
-		'Way\Generators\GeneratorsServiceProvider'
+		'Way\Generators\GeneratorsServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider',
 
 	),
 
