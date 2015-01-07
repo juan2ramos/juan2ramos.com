@@ -1,0 +1,21 @@
+<?php namespace juan2ramos\Components\ACL;
+
+use Illuminate\Support\Facades\Facade;
+
+/**
+ * @see \Illuminate\Html\FormBuilder
+ */
+class ACL extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return 'ACL';
+    }
+
+}
+

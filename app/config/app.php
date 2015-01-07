@@ -121,10 +121,14 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
-		//Custom
+		/* Vendor */
 
 		'Way\Generators\GeneratorsServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
+
+		/* Custom */
+
+		'juan2ramos\Components\ACL\ACLServiceProvider',
 
 	),
 
@@ -192,6 +196,9 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
+
+		/* Custom */
+		'ACL'				=> 'juan2ramos\Components\ACL\ACL'
 
 	),
 
