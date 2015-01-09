@@ -10,7 +10,7 @@ class ACLBuilder
     private $permissionName;
     private $permissions;
 
-    public function getPermissions($idUser = false){
+    public function getPermissionsAll($idUser = false){
 
         $this->idUser = ($idUser) ? $idUser : (\Auth::check() ? \Auth::user()->id : false);
         $this->idRole = User::find($this->idUser)->roles_id;
@@ -20,6 +20,14 @@ class ACLBuilder
                 $this->permissionsRole(), $this->permissionsUser()
             )
         ];
+    }
+    public function getPermissions($idUser = false){
+        $this->idUser = ($idUser) ? $idUser : (\Auth::check() ? \Auth::user()->id : false);
+        $this->idRole = User::find($this->idUser)->roles_id;
+        return array_merge(
+            $this->permissionsRole(), $this->permissionsUser()
+        );
+
     }
     public function permissions($permissionName,$idUser = false)
     {

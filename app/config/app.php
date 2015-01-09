@@ -129,6 +129,7 @@ return array(
 		/* Custom */
 
 		'juan2ramos\Components\ACL\ACLServiceProvider',
+		'juan2ramos\Components\Menu\MenuServiceProvider',
 
 	),
 
@@ -198,7 +199,8 @@ return array(
 		'View'              => 'Illuminate\Support\Facades\View',
 
 		/* Custom */
-		'ACL'				=> 'juan2ramos\Components\ACL\ACL'
+		'ACL'				=> 'juan2ramos\Components\ACL\ACL',
+		'Menus'				=> 'juan2ramos\Components\Menu\Menus',
 
 	),
 

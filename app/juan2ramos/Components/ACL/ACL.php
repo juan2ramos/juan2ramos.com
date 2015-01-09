@@ -2,9 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \Illuminate\Html\FormBuilder
- */
+
 class ACL extends Facade
 {
     /**
